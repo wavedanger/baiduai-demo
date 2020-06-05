@@ -12,4 +12,7 @@ git clone git@github.com:wavedanger/baiduai-demo.git
 cd baiduai-demo/cloudfunctions/baiduai
 npm install
 ```
-3. 选择云函数环境，上传并部署云函数
+3. 申请百度AI帐号并创建应用，替换云函数index.js中APPID/AK/SK，修改为自己百度ai的应用信息
+4. 选择云函数环境，上传并部署云函数后即可使用
+
+
