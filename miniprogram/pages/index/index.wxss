@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+} 
+
+page {
+  background: #f6f6f6;
+}
+
+.uploader{
+  margin: 20rpx auto;
+  width: 100%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+  padding: 0 0 0 40rpx;
+}
+
+.uploader-text{
+  width: 100%;
+  line-height: 52px;
+  font-size: 34rpx;
+  color: #007aff;
+}
+.item{
+  padding:40rpx;
+}
+.name{
+  color: #007aff;
+  font-size: 30rpx;
+}
+.desc{
+  font-size: 26rpx;
+  margin:30rpx auto;
+}

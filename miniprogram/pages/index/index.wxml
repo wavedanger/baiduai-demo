@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 上传图片 -->
+  <view class="uploader">
+    <view class="uploader-text" bindtap="doUpload">
+      <text>上传图片</text>
+    </view>
+  </view>
+   <view class="uploader">
+    <view class="uploader-text">
+      <text>当前图片</text>
+    </view>
+  </view>
+  <image src="{{filePath}}" wx:if="{{filePath}}"></image>
+  <view class="uploader">
+    <view class="uploader-text">
+      <text>查询结果</text>
+    </view>
+  </view>
+   <view class="show" wx:if="{{result}}">
+   <!-- <view class="item">
+        <view class="name">{{init.name}}</view>
+        <view class="desc">{{init.description}}</view>
+        <image src="{{init.image_url}}" mode="aspectFit"></image>
+      </view> -->
+      <view wx:for="{{result}}" wx:key="item" class="item">
+        <view class="name">{{item.name}}</view>
+        <view class="desc">{{item.baike_info.description}}</view>
+        <image src="{{item.baike_info.image_url}}" mode="aspectFit"></image>
+      </view>
+    </view>
+</view>
